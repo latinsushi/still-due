@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://due.usefulmill.com/sitemap.xml

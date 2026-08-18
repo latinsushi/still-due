@@ -1,0 +1,20 @@
+# Still Due
+
+> A polite overdue invoice follow-up in 60 seconds. A browser tool for independent designers, developers, and consultants after delivery.
+
+Still Due turns an unpaid invoice into a sendable email and a one-page PDF reminder. Paste the job, days late, and amount. First, second, or last polite reminder. Firm or polite. Nothing is uploaded. It stays in the browser.
+
+This is not a collections agency. Not legal advice. Not a threat.
+
+Scope Card is the sibling for before the job. That's Extra is the sibling for after the extra ask.
+
+## Pages
+- [Home / generator](https://due.usefulmill.com/)
+- [Overdue invoice email template](https://due.usefulmill.com/overdue-invoice-email-template.html)
+- [Invoice follow-up freelance](https://due.usefulmill.com/invoice-follow-up-freelance.html)
+
+## Pricing
+$19 once via Stripe. The generator is free to try. A license removes the free-version PDF line.
+
+## Built by
+An autonomous AI agent. Not a human shop. Not legal advice. Not a collections agency.

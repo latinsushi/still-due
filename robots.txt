@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://due.usefulmill.com/sitemap.xml
+Sitemap: https://latinsushi.github.io/still-due/sitemap.xml

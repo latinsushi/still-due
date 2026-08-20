@@ -13,6 +13,7 @@ Scope Card is the sibling for before the job. That's Extra is the sibling for af
 - [Overdue invoice email template](https://latinsushi.github.io/still-due/overdue-invoice-email-template.html)
 - [Invoice follow-up freelance](https://latinsushi.github.io/still-due/invoice-follow-up-freelance.html)
 - [Polite payment reminder](https://latinsushi.github.io/still-due/polite-payment-reminder.html)
+- [Second invoice reminder](https://latinsushi.github.io/still-due/second-invoice-reminder.html)
 
 ## Pricing
 $19 once via Stripe. The generator is free to try. A license removes the free-version PDF line.

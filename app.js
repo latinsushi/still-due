@@ -27,6 +27,33 @@
     }
   })();
 
+  (function bindCheckoutIntent(product) {
+    if (!window.umCheckoutClick) {
+      window.umCheckoutClick = function (event, tag) {
+        if (!event || event.__umCheckout) return false;
+        event.__umCheckout = 1;
+        var link = event.currentTarget;
+        if (window.posthog) {
+          try {
+            posthog.capture("checkout_clicked", { product: tag || product }, { send_instantly: true, transport: "sendBeacon" });
+          } catch (err) {
+            posthog.capture("checkout_clicked", { product: tag || product });
+          }
+        }
+        if (event.metaKey || event.ctrlKey || event.shiftKey || event.altKey || event.button) return true;
+        if (event.preventDefault) event.preventDefault();
+        var href = link && link.href;
+        setTimeout(function () { if (href) window.location.href = href; }, 300);
+        return false;
+      };
+    }
+    document.querySelectorAll('a[href*="buy.stripe.com"]').forEach(function (a) {
+      a.addEventListener("click", function (event) {
+        window.umCheckoutClick(event, product);
+      });
+    });
+  })("still-due");
+
   document.querySelectorAll("[data-copy]").forEach(function (btn) {
     btn.addEventListener("click", function () {
       var sel = btn.getAttribute("data-copy");
